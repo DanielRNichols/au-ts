@@ -1,5 +1,6 @@
 import {Aurelia} from 'aurelia-framework'
 import environment from './environment';
+import 'bootstrap'; // load bootstrap JavaScript
 
 export function configure(aurelia: Aurelia) {
   aurelia.use

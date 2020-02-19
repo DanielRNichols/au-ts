@@ -1,0 +1,9 @@
+<template>
+  <require from='./styles/styles.css'></require>
+
+  <h1 class='main'>${message}</h1>
+  <ul repeat.for="nav of router.navigation">
+      <li class="${nav.isActive ? 'active' : ''}"><a href.bind="nav.href">${nav.title}</a></li>
+  </ul>
+  <router-view></router-view>
+</template>
